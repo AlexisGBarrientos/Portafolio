@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+
+.main-subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.img-banner1 {
+    max-width: 100%;
+    max-height: 800px;
+}
+
+.main-menu {
+    list-style: none;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(15, 99, 43, 0.171);
+}
+
+.main-menu__link {
+    text-decoration: none;
+}
+
+.main-menu__link:hover {
+    opacity: .3;
+}
+
+.main-skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-skills {
+    max-width: 150px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    background: cadetblue;
+    font-size: 1.5em;
+}
