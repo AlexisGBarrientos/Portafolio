@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/avatar.ico">
     <script src="js/main.js"></script>
-    <title>My Profile</title>
+    <title>{Alexis-Barrientos}</title>
 </head>
 <body>
 
@@ -21,39 +21,68 @@
                 <li class="main-menu__item"><a class="main-menu__link" href="#contact">Contacto</a></li>
             </ul>
         </nav>
-        <img class="img-banner1" src="" alt="banner 1">
+        <img class="img-banner1 shadow" src="img/developer-guide-blog-2.png" alt="banner 1">
     </header>
 
     <main class="main">
         <article class="main-article">
             <section class="main-perfil" id="aboutme">
                 <h2 class="main-subtitle">Perfil</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae! Explicabo molestias sunt quo in ad! Placeat sed ipsum iure, deserunt minus fuga molestias obcaecati quasi maxime! Fugiat, eaque illo!</p>
-            </section>
+                <div class="main-perfil__data">
+                    <img class="" src="img/avatar.png" alt="Avatar">
+                    <p class="shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae! Explicabo molestias sunt quo in ad! Placeat sed ipsum iure, deserunt minus fuga molestias obcaecati quasi maxime! Fugiat, eaque illo!</p>
+                </div>
+            </section><hr>
             <section class="main-habilidades" id="skills">
                 <h2 class="main-subtitle">Habilidades</h2>
                 <div class="main-skills">
-                    <img class="img-skills" src="img/html5.png" alt="logo html5">
-                    <img class="img-skills" src="img/css.png" alt="logo css">
-                    <img class="img-skills" src="img/js.png" alt="logo javascript">
-                    <img class="img-skills" src="img/php.png" alt="logo php">
-                    <img class="img-skills" src="img/mysql.png" alt="logo mysql">
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/html5.png" alt="logo html5">
+                        <label class="skill__label shadow">HTML5</label>
+                    </div>
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/css.png" alt="logo css">
+                        <label class="skill__label shadow">CSS</label>
+                    </div>
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/js.png" alt="logo javascript">
+                        <label class="skill__label shadow">Javascript</label>
+                    </div>
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/php.png" alt="logo php">
+                        <label class="skill__label shadow">PHP</label>
+                    </div>
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/mysql.png" alt="logo mysql">
+                        <label class="skill__label shadow">Mysql</label>
+                    </div>
                 </div>
-            </section>
-            <section class="main-proyecto" id="jobs">
+            </section><hr>
+            <section class="main-proyect" id="jobs">
                 <h2 class="main-subtitle">Proyectos</h2>
-            </section>
+                <div class="main-proyect__imges">
+                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        <img class="shadow" src="img/ecommerce.jpg" alt="Proyecto Unique">
+                    </a>    
+                </div>
+            </section><hr>
             <section class="main-contacto" id="contact">
                 <h2 class="main-subtitle">Contacto</h2>
-                <form action="" method="post">
-                    <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre">
-                    <label for="email">Email</label>
-                        <input type="mail" id="email">
-                    <textarea name="" id="" cols="30" rows="10">Mensaje...</textarea>
-                    <input type="submit">
+                <form class="main-form" action="" method="post">
+                    <div class="form__camp--data">
+                        <label class="form__camp--label shadow" for="nombre">Nombre:</label>
+                            <input class="form__camp--input shadow border" type="text" id="nombre">
+                        <label class="form__camp--label shadow" for="email">Email:</label>
+                            <input class="form__camp--input shadow border" type="mail" id="email">
+                    </div>
+                    <div class="form__camp--text">
+                        <textarea class="shadow border" name="" id="" cols="80" rows="10" placeholder="Mensaje..."></textarea>
+                    </div>
+                    <div class="form__camp--button">
+                        <input class="shadow border" type="submit">
+                    </div>
                 </form>
-            </section>
+            </section><hr>
         </article>
     </main>
 
