@@ -12,23 +12,34 @@
 }
 
 body {
+    margin-top: 50px;
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(100,75,233,0.9654236694677871) 100%);
 }
 
 section {
-    /* margin-top: 50px; */
-    margin-bottom: 150px;
+    padding: 50px;
+    margin-bottom: 200px;
 }
+
 
 .main-subtitle {
     display: flex;
     justify-content: center;
-    padding: 1.5em;
+    max-width: 10%;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 10%;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .img-banner1 {
     width: 100vw;
+    height: 80vh;
+    margin-top: 50px;
+    /* border: 2px solid black; */
     
     
 }
@@ -59,13 +70,27 @@ section {
     height: 50%;
 }
 
-.main-proyect {
+.main-perfil__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.main-perfil__text--span {
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .main-proyect__imges {
     /* width: 200px; */
     display: flex;
     justify-content: center;
+    margin-bottom: 45px;
 }
 
 .main-skills {
@@ -92,22 +117,35 @@ section {
     margin-top: 5px;
     padding: 1em;
     margin: auto;
+    border: 1px solid black;
     border-radius: 50%;
-    background: rgba(202, 204, 204, 0.918);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
 }
 
 .main-contacto {
     /* opacity: 0.7; */
+    margin-bottom: 10px;
     
+}
+
+.main-subtitle--contact {
+    display: flex;
+    justify-content: center;
+    max-width: 10%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 10%;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .main-form {
     max-width: 70%;
-    justify-content: center;
     margin: auto;
     padding: 30px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .form__camp--label {
@@ -142,9 +180,20 @@ section {
     font-size: 1.5em;
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 10px;
     padding: 10px;
     /* border: 2px solid black; */
+}
+
+.main-contact__enlaces {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50%;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.main-contact__enlaces--img {
+    max-width: 100%;
 }
 
 .border {

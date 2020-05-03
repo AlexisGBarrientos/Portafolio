@@ -1,3 +1,6 @@
+<?php 
+    require('correo.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,14 +30,20 @@
     <main class="main">
         <article class="main-article">
             <section class="main-perfil" id="aboutme">
-                <h2 class="main-subtitle">Perfil</h2>
+                <h2 class="main-subtitle shadow">Perfil</h2>
                 <div class="main-perfil__data">
                     <img class="" src="img/avatar.png" alt="Avatar">
-                    <p class="shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae! Explicabo molestias sunt quo in ad! Placeat sed ipsum iure, deserunt minus fuga molestias obcaecati quasi maxime! Fugiat, eaque illo!</p>
+                    <div class="main-perfil__text">
+                        <span class="main-perfil__text--span border shadow">Desarrollador Web Full Stack, de manera autónoma y responsable.</span>
+                        <span class="main-perfil__text--span border shadow">Llevo a cabo mis proyectos sumando experiencias y nuevos conocimientos.</span>
+                        <span class="main-perfil__text--span border shadow">Trabajo en un marco de metodologias ágiles.</span> 
+                        <span class="main-perfil__text--span border shadow">Me adapto a las circustancias, exigencias.</span> 
+                        <span class="main-perfil__text--span border shadow">Desarrollar es lo que me apasiona, comprobalo.</span> 
+                    </div>
                 </div>
             </section><hr>
             <section class="main-habilidades" id="skills">
-                <h2 class="main-subtitle">Habilidades</h2>
+                <h2 class="main-subtitle shadow">Habilidades</h2>
                 <div class="main-skills">
                     <div class="skill">
                         <img class="img__skill shadow" src="img/html5.png" alt="logo html5">
@@ -59,7 +68,7 @@
                 </div>
             </section><hr>
             <section class="main-proyect" id="jobs">
-                <h2 class="main-subtitle">Proyectos</h2>
+                <h2 class="main-subtitle shadow">Proyectos</h2>
                 <div class="main-proyect__imges">
                     <a href="http://google.com" target="_blank" rel="noopener noreferrer">
                         <img class="shadow" src="img/ecommerce.jpg" alt="Proyecto Unique">
@@ -67,21 +76,25 @@
                 </div>
             </section><hr>
             <section class="main-contacto" id="contact">
-                <h2 class="main-subtitle">Contacto</h2>
-                <form class="main-form" action="" method="post">
+                <h2 class="main-subtitle--contact shadow">Contacto</h2>
+                <form class="main-form" action="correo.php" method="post">
                     <div class="form__camp--data">
                         <label class="form__camp--label shadow" for="nombre">Nombre:</label>
-                            <input class="form__camp--input shadow border" type="text" id="nombre">
+                            <input name="nombre" class="form__camp--input shadow border" type="text" id="nombre" required>
                         <label class="form__camp--label shadow" for="email">Email:</label>
-                            <input class="form__camp--input shadow border" type="mail" id="email">
+                            <input name="email" class="form__camp--input shadow border" type="mail" id="email" required>
                     </div>
                     <div class="form__camp--text">
-                        <textarea class="shadow border" name="" id="" cols="80" rows="10" placeholder="Mensaje..."></textarea>
+                        <textarea name="mensaje" class="shadow border" name="" id="" cols="80" rows="10" placeholder="Mensaje..." required></textarea>
                     </div>
                     <div class="form__camp--button">
                         <input class="shadow border" type="submit">
                     </div>
                 </form>
+                <div class="main-contact__enlaces">
+                    <a href="https://github.com/AlexisGBarrientos" target="_blank" rel="noopener noreferrer"><img class="main-contact__enlaces--img" src="img/github.ico" alt="Contacto Github"></a>
+                    <a href="https://www.linkedin.com/in/alexisbarrientos" target="_blank" rel="noopener noreferrer"><img class="main-contact__enlaces--img" src="img/linkedin.ico" alt="Contacto Linkedin"></a>
+                </div>
             </section><hr>
         </article>
     </main>
