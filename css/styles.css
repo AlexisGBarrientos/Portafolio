@@ -4,15 +4,21 @@ Advent pro :
 font-family: 'Advent Pro', sans-serif;
 Ubuntu:
 font-family: 'Ubuntu', sans-serif;
+Arsenal:
+font-family: 'Arsenal', sans-serif;
+Assistant:
+font-family: 'Assistant', sans-serif;
 */
 
 /*----------General Classes Styles----------*/
 
 * {
     box-sizing: border-box;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Assistant', sans-serif;
+    /* font-family: 'Indie Flower', cursive; */
     /* font-family: 'Ubuntu', sans-serif; */
     /* font-family: 'Advent Pro', sans-serif; */
+    /* font-family: 'Arsenal', sans-serif; */
     
     /* border: 1px solid black; */
 }
@@ -172,8 +178,8 @@ section {
 .skill__label {
     display: flex;
     justify-content: center;
-    width: 40%;
-    padding: 10px;
+    width: 45%;
+    padding: 15px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;

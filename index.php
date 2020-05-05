@@ -1,5 +1,5 @@
 <?php 
-    require('correo.php');
+    require("correo.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -89,12 +89,12 @@
                 <form class="main-form" action="correo.php" method="post">
                     <div class="form__camp--data">
                         <label class="form__camp--label shadow" for="nombre">Nombre:</label>
-                            <input name="nombre" class="form__camp--input shadow border" type="text" id="nombre" required>
+                            <input name="nombre" class="form__camp--input shadow border" type="text" id="nombre" required="" value="<?=$nombre?>">
                         <label class="form__camp--label shadow" for="email">Email:</label>
-                            <input name="email" class="form__camp--input shadow border" type="mail" id="email" required>
+                            <input name="email" class="form__camp--input shadow border" type="mail" id="email" required="" value="<?=$email?>">
                     </div>
                     <div class="form__camp--text">
-                        <textarea name="mensaje" class="shadow border" name="" id="" cols="80" rows="8" placeholder="Mensaje..." required></textarea>
+                        <textarea name="mensaje" class="shadow border" name="" id="" cols="80" rows="8" placeholder="Mensaje..." required="" value="<?=$mensaje?>"></textarea>
                     </div>
                     <div class="form__camp--button">
                         <input class="shadow border" type="submit">
