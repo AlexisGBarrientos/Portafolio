@@ -1,0 +1,113 @@
+<?php 
+    require('correo.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/avatar.ico">
+    <script src="js/main.js"></script>
+    <title>{Alexis-Barrientos}</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <ul class="main-menu">
+
+                <a href="#aboutme"><li class="main-menu__item">ACERCA DE MI</li></a>
+
+                <a href="#skills"><li class="main-menu__item">HABILIDADES</li></a>
+
+                <a href="#jobs"><li class="main-menu__item">PROYECTOS</li></a>
+
+                <a href="#contact"><li class="main-menu__item">CONTACTO</li></a>
+
+                <!-- <li class="main-menu__item"><a class="main-menu__link" href="#aboutme">ACERCA DE MI</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#skills">HABILIDADES</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#jobs">PROYECTOS</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#contact">CONTACTO</a></li> -->
+            </ul>
+        </nav>
+        <img class="img-banner1 shadow" src="img/developer-guide-blog-2.png" alt="banner 1">
+    </header>
+
+    <main class="main">
+        <article class="main-article">
+            <section class="main-perfil" id="aboutme">
+                <h2 class="main-subtitle shadow">Perfil</h2>
+                <div class="main-perfil__data">
+                    <img class="" src="img/avatar.png" alt="Avatar">
+                    <div class="main-perfil__text">
+                        <span class="main-perfil__text--span border shadow">Desarrollador Web Full Stack, de manera autónoma y responsable.</span>
+                        <span class="main-perfil__text--span border shadow">Llevo a cabo mis proyectos sumando experiencias y nuevos conocimientos.</span>
+                        <span class="main-perfil__text--span border shadow">Trabajo en un marco de metodologias ágiles.</span> 
+                        <span class="main-perfil__text--span border shadow">Me adapto a las circustancias, exigencias.</span> 
+                        <span class="main-perfil__text--span border shadow">Desarrollar es lo que me apasiona, comprobalo.</span> 
+                    </div>
+                </div>
+            </section><hr>
+            <section class="main-habilidades" id="skills">
+                <h2 class="main-subtitle shadow">Habilidades</h2>
+                <div class="main-skills">
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/html5.png" alt="logo html5">
+                        <label class="skill__label shadow">HTML5</label>
+                    </div>
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/css.png" alt="logo css">
+                        <label class="skill__label shadow">CSS</label>
+                    </div>
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/js.png" alt="logo javascript">
+                        <label class="skill__label shadow">Javascript</label>
+                    </div>
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/php.png" alt="logo php">
+                        <label class="skill__label shadow">PHP</label>
+                    </div>
+                    <div class="skill">
+                        <img class="img__skill shadow" src="img/mysql.png" alt="logo mysql">
+                        <label class="skill__label shadow">Mysql</label>
+                    </div>
+                </div>
+            </section><hr>
+            <section class="main-proyect" id="jobs">
+                <h2 class="main-subtitle shadow">Proyectos</h2>
+                <div class="main-proyect__imges">
+                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        <img class="shadow" src="img/ecommerce.jpg" alt="Proyecto Unique">
+                    </a>    
+                </div>
+            </section><hr>
+            <section class="main-contacto" id="contact">
+                <h2 class="main-subtitle--contact shadow">Contacto</h2>
+                <form class="main-form" action="correo.php" method="post">
+                    <div class="form__camp--data">
+                        <label class="form__camp--label shadow" for="nombre">Nombre:</label>
+                            <input name="nombre" class="form__camp--input shadow border" type="text" id="nombre" required>
+                        <label class="form__camp--label shadow" for="email">Email:</label>
+                            <input name="email" class="form__camp--input shadow border" type="mail" id="email" required>
+                    </div>
+                    <div class="form__camp--text">
+                        <textarea name="mensaje" class="shadow border" name="" id="" cols="80" rows="8" placeholder="Mensaje..." required></textarea>
+                    </div>
+                    <div class="form__camp--button">
+                        <input class="shadow border" type="submit">
+                    </div>
+                </form>
+                <div class="main-contact__enlaces">
+                    <a href="https://github.com/AlexisGBarrientos" target="_blank" rel="noopener noreferrer"><img class="main-contact__enlaces--img" src="img/github.ico" alt="Contacto Github"></a>
+                    <a href="https://www.linkedin.com/in/alexisbarrientos" target="_blank" rel="noopener noreferrer"><img class="main-contact__enlaces--img" src="img/linkedin.ico" alt="Contacto Linkedin"></a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">Alexis Barrientos - 2020</footer>
+</body>
+</html>
